@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutActivity"
+    android:background="@color/logoBgDark"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chestCV"
+        android:foreground="@drawable/click_effect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="15dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chest"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Chest"
+            android:fontFamily="@font/altissimo"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:background="@color/halfTransparentBlack"
+            android:padding="3dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/armsCV"
+        android:foreground="@drawable/click_effect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp"
+        android:layout_below="@id/chestCV"
+        android:background="@drawable/nutrition"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nutrition"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Arms"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/altissimo"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:background="@color/halfTransparentBlack"
+            android:padding="3dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/legsCV"
+        android:foreground="@drawable/click_effect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="15dp"
+        android:clickable="true"
+        android:layout_below="@id/armsCV">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/workout"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Legs"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/altissimo"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:background="@color/halfTransparentBlack"
+            android:padding="3dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backCV"
+        android:foreground="@drawable/click_effect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="15dp"
+        android:clickable="true"
+        android:layout_below="@id/legsCV">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/workout"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Back"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/altissimo"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:background="@color/halfTransparentBlack"
+            android:padding="3dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardioCV"
+        android:foreground="@drawable/click_effect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="15dp"
+        android:clickable="true"
+        android:layout_below="@id/backCV">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/workout"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Cardio"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/altissimo"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:background="@color/halfTransparentBlack"
+            android:padding="3dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+
+    <item>
+        <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:innerRadiusRatio="2.5"
+                android:shape="ring"
+                android:thickness="8dp"
+                android:useLevel="true">
+                <solid android:color="@color/logoBgDark" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadiusRatio="2.5"
+            android:shape="ring"
+            android:thickness="3dp"
+            android:useLevel="false">
+
+            <solid android:color="@color/logoBgDark" />
+
+        </shape>
+    </item>
+
+</layer-list>
+

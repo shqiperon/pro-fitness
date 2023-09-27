@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_margin="3dp"
+    android:background="@drawable/custom_slide">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/slideImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/workout"
+        app:shapeAppearanceOverlay="@style/roundCornersImageView"/>
+
+    <TextView
+        android:id="@+id/slideTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Workouts"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:fontFamily="@font/altissimo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@color/halfTransparentBlack"/>
+
+    <TextView
+        android:id="@+id/slideBelowTV"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slideTextView"
+        android:padding="3dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Here you can find different exercises, for different body parts"
+        android:textColor="@color/white"
+        android:background="@color/halfTransparentBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/altissimo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/slideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/click_effect"
+        android:text="Open"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/slideBelowTV"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="0.02"
+        android:textSize="16sp" />
+
+</RelativeLayout>

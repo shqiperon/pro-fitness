@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logoBg"
+    tools:context=".NutritionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/nutrition_custom_layout"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="@drawable/click_effect"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <TextView
+            android:layout_below="@id/backArrow"
+            android:id="@+id/transparentTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="DAILY PICK"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/whiteTransparent" />
+
+        <TextView
+            android:id="@+id/mealIdeasTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/altissimo"
+            android:padding="3dp"
+            android:text="Meal ideas"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/transparentTxt"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/nutritionSlideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/mealIdeasTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="110dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="110dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nutritionSlideViewPager"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/altissimo"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Start your day off right with these healthy recipes"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
